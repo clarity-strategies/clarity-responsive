@@ -167,7 +167,7 @@ footer h4, footer h6 {
   padding: 10px;
 }
 .CTAtopimage{
-  
+
   top: 40px;
   left: 40px;
 }
@@ -306,6 +306,24 @@ textarea {
 
 .call-to-action h2 {
     margin: 0 auto 20px;
+}
+
+.claritybtn {
+    display: inline-block;
+    padding: .375rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    white-space: wrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 
 .btn.btn-primary {
