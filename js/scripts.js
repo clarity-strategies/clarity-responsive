@@ -8,7 +8,16 @@
 
 
 
-  function swapsection(section){
+  function openform(section){
   $('#'+section).toggle();
   $('#'+section+'-form').toggle();
+  $('html, body').animate({
+    scrollTop: $('#'+section+'-form').offset().top
+}, 1000);
+  //$('body').scrollTo('#'+section+'-form');
+  }
+  function closeform(section){
+  $('#'+section).toggle();
+  $('#'+section+'-form').toggle();
+  console.log('this = '+this)
   }

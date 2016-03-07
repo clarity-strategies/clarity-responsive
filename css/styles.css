@@ -300,8 +300,8 @@ header .header-content .inner p {
     }
 
     section {
-        min-height: 600px;
-        padding: 100px 0;
+        min-height: 400px;
+        xpadding: 100px 0;
     }
 
 }
