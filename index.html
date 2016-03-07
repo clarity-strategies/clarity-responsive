@@ -48,20 +48,20 @@
                     <a class="nav-link" href="#three">Content Strategies</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link" href="#three">Attract &amp; Engage</a>
+                    <a class="nav-link" href="#two">Attract &amp; Engage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#four">Inbound Marketing</a>
+                    <a class="nav-link" href="#three">Inbound Marketing</a>
                 </li>
                 <li class="nav-item">
 
-                  <a class="nav-link" href="#five">Brand Identity</a>
+                  <a class="nav-link" href="#four">Brand Identity</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#six">Proven Results</a>
+                    <a class="nav-link" href="#five">Proven Results</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#seven">Case Studies</a>
+                    <a class="nav-link" href="#six">Case Studies</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav pull-xs-right">
@@ -136,33 +136,8 @@ DEVELOPMENT</div>
           
     </div>
 </section>
-<div id="valuepropform" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog" >
-        <div class="modal-content" >
-            <div class="modal-body"style="background-color: rgb(83,158,60);color:white;" >
-                <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2>
-                <div class="col-md-12 text-xs-left">
-                   Download Clarity's e-book, The Inward Investment Marketing System:
-                   Advanced strategies to attract and engage more expanding businesses, and
-                   generate more inward investment leads.
-                </div>
-                <div class="row">
-              <div class="col-md-6">
-                <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
-              </div>
-              <div class="col-md-6">
-                <form>
-                  <input class="form-control" id="name" placeholder="Enter your name" type="text">
-                  <input class="form-control" id="email" placeholder="Enter email" type="email">
-                  <input type="submit" value="Download E-Book"</form></div>
-              </div>
-                <br/>
-                <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button>
-            </div>
-        </div>
-    </div>
-</div>
-<section id="three" style="background-color: #fff;">
+
+<section id="two" style="background-color: #fff;">
       <div class="container text-xs-center">
        <h3 style="color: #0073b5;margin-top:24px;">CONTENT MARKETING STRATEGIES</h3>
        <h2 style='margin: 24px 0px 24px 0px' class="text-xs">Attract and Engage Investing Companies Online.</h2>
@@ -184,7 +159,7 @@ them to <strong>you</strong><datasource>*GIS Planning 2013</datasource>
               Inward Investment<br/>
 				<div style="color: rgb(0,105,166)">CONTENT MARKETING<br/>STRATEGIES</div>
 
-<button class='btn btn-primary'>
+<button class='btn btn-primary' onclick="swapsection('two')">
   LEARN MORE
          </button>
            </div>
@@ -192,8 +167,38 @@ them to <strong>you</strong><datasource>*GIS Planning 2013</datasource>
     </div>
     <br>
 </section>
+<section id="two-form" style="display:none;">
+       <div class="container text-xs-center" style="background-color: rgb(125,125,125);color: white;padding: 30px;">
+       <button type="button" class="close closer" aria-label="Close" onclick="swapsection('two')"><span aria-hidden="true">&times;</span></button>
 
-<section id="four">
+          <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2><br/>
+          <div class="col-md-12 text-xs-left">
+             Download Clarity's e-book, The Inward Investment Marketing System:
+             Advanced strategies to attract and engage more expanding businesses, and
+             generate more inward investment leads.<br/><br/>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+          <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
+          </div>
+          <div class="col-md-6 center-block">
+          <form>
+            <input class="form-control" id="name" placeholder="Enter your name" size="24" type="text"><br/>
+            <input class="form-control" id="email" placeholder="Enter email" size="24" type="email"><br/>
+            <!--<input class="claritybtn btn-success"type="submit" value="Download The Inward Investment Marketing System E-Book">-->
+            <button class="claritybtn btn-success btn-lg center-block" onclick="swapsection('one')"> Download E-Book</button>
+          </form>
+        </div>
+          </div>
+          <br/>
+          <!-- <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button> 
+          <button class="claritybtn btn-danger btn-lg center-block" onclick="swapsection('one')"> No Thanks. We are not interested in growing our regional economy.</button> -->
+          
+    </div>
+</section>
+
+<section id="three">
   <div class="container text-xs-center">
    <h3 style="color: #0073b5;margin-top:24px;">INBOUND MARKETING PLATFORMS</h3>
    <h2 style='margin: 24px 0px 24px 0px' class="text-xs">Generate More Inward Investment Leads.</h2>
@@ -215,7 +220,7 @@ online.
               Inward Investment<br/>
 				<div style="color: rgb(217,162,13)">INBOUND MARKETING<br/>PLATFORMS</div>
 
-<button class='btn btn-warning'>
+<button class='btn btn-warning'  onclick="swapsection('three')">
   LEARN MORE
          </button>
        </div>
@@ -223,7 +228,37 @@ online.
 </div>
 <br>
 </section>
-<section id="five"  style="background-color: #fff;">
+<section id="three-form" style="display:none;">
+       <div class="container text-xs-center" style="background-color: rgb(125,125,125);color: white;padding: 30px;">
+       <button type="button" class="close closer" aria-label="Close" onclick="swapsection('three')"><span aria-hidden="true">&times;</span></button>
+
+          <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2><br/>
+          <div class="col-md-12 text-xs-left">
+             Download Clarity's e-book, The Inward Investment Marketing System:
+             Advanced strategies to attract and engage more expanding businesses, and
+             generate more inward investment leads.<br/><br/>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+          <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
+          </div>
+          <div class="col-md-6 center-block">
+          <form>
+            <input class="form-control" id="name" placeholder="Enter your name" size="24" type="text"><br/>
+            <input class="form-control" id="email" placeholder="Enter email" size="24" type="email"><br/>
+            <!--<input class="claritybtn btn-success"type="submit" value="Download The Inward Investment Marketing System E-Book">-->
+            <button class="claritybtn btn-success btn-lg center-block" onclick="swapsection('one')"> Download E-Book</button>
+          </form>
+        </div>
+          </div>
+          <br/>
+          <!-- <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button> 
+          <button class="claritybtn btn-danger btn-lg center-block" onclick="swapsection('one')"> No Thanks. We are not interested in growing our regional economy.</button> -->
+          
+    </div>
+</section>
+<section id="four"  style="background-color: #fff;">
   <div class="container text-xs-center">
    <h3 style="color: rgb(204,55,47);margin-top:24px;">BRAND IDENTITY DEVELOPMENT</h3>
    <h2 style='margin: 24px 0px 24px 0px' class="text-xs">Build Highly Credible Business Partnerships.</h2>
@@ -252,6 +287,36 @@ highly credible business partner.
 </div>
 <br>
 </section>
+<section id="four-form" style="display:none;">
+       <div class="container text-xs-center" style="background-color: rgb(125,125,125);color: white;padding: 30px;">
+       <button type="button" class="close closer" aria-label="Close" onclick="swapsection('four')"><span aria-hidden="true">&times;</span></button>
+
+          <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2><br/>
+          <div class="col-md-12 text-xs-left">
+             Download Clarity's e-book, The Inward Investment Marketing System:
+             Advanced strategies to attract and engage more expanding businesses, and
+             generate more inward investment leads.<br/><br/>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+          <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
+          </div>
+          <div class="col-md-6 center-block">
+          <form>
+            <input class="form-control" id="name" placeholder="Enter your name" size="24" type="text"><br/>
+            <input class="form-control" id="email" placeholder="Enter email" size="24" type="email"><br/>
+            <!--<input class="claritybtn btn-success"type="submit" value="Download The Inward Investment Marketing System E-Book">-->
+            <button class="claritybtn btn-success btn-lg center-block" onclick="swapsection('one')"> Download E-Book</button>
+          </form>
+        </div>
+          </div>
+          <br/>
+          <!-- <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button> 
+          <button class="claritybtn btn-danger btn-lg center-block" onclick="swapsection('one')"> No Thanks. We are not interested in growing our regional economy.</button> -->
+          
+    </div>
+</section>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/tether/1.2.0/tether.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
@@ -279,7 +344,7 @@ highly credible business partner.
     </div>
 </div>
 
-<section id="six">
+<section id="five">
   <div class="container text-xs-center">
    <h3 style="color: #0073b5;margin-top:24px;">PROVEN RESULTS</h3>
    <h2 style='margin: 24px 0px 24px 0px' class="text-xs">Generate More Inward Investment Leads.</h2>
@@ -298,7 +363,37 @@ highly credible business partner.
   </div>
 <br>
 </section>
-<section id="seven"  style="background-color: #fff;">
+<section id="five-form" style="display:none;">
+       <div class="container text-xs-center" style="background-color: rgb(125,125,125);color: white;padding: 30px;">
+       <button type="button" class="close closer" aria-label="Close" onclick="swapsection('five')"><span aria-hidden="true">&times;</span></button>
+
+          <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2><br/>
+          <div class="col-md-12 text-xs-left">
+             Download Clarity's e-book, The Inward Investment Marketing System:
+             Advanced strategies to attract and engage more expanding businesses, and
+             generate more inward investment leads.<br/><br/>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+          <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
+          </div>
+          <div class="col-md-6 center-block">
+          <form>
+            <input class="form-control" id="name" placeholder="Enter your name" size="24" type="text"><br/>
+            <input class="form-control" id="email" placeholder="Enter email" size="24" type="email"><br/>
+            <!--<input class="claritybtn btn-success"type="submit" value="Download The Inward Investment Marketing System E-Book">-->
+            <button class="claritybtn btn-success btn-lg center-block" onclick="swapsection('one')"> Download E-Book</button>
+          </form>
+        </div>
+          </div>
+          <br/>
+          <!-- <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button> 
+          <button class="claritybtn btn-danger btn-lg center-block" onclick="swapsection('one')"> No Thanks. We are not interested in growing our regional economy.</button> -->
+          
+    </div>
+</section>
+<section id="six"  style="background-color: #fff;">
   <div class="container text-xs-center">
    <h3 style="color: #0073b5;margin-top:24px;">CASE STUDIES</h3>
         <div class="row">
@@ -313,6 +408,36 @@ highly credible business partner.
        </div>
   </div>
 <br>
+</section>
+<section id="six-form" style="display:none;">
+       <div class="container text-xs-center" style="background-color: rgb(125,125,125);color: white;padding: 30px;">
+       <button type="button" class="close closer" aria-label="Close" onclick="swapsection('six')"><span aria-hidden="true">&times;</span></button>
+
+          <h2 class="text-xs-left">Generate More Inward Investment Leads...</h2><br/>
+          <div class="col-md-12 text-xs-left">
+             Download Clarity's e-book, The Inward Investment Marketing System:
+             Advanced strategies to attract and engage more expanding businesses, and
+             generate more inward investment leads.<br/><br/>
+          </div>
+
+          <div class="row">
+          <div class="col-md-6">
+          <img src="//lh3.googleusercontent.com/-U6ffYhbrj4s/Vt1DaKCJ8YI/AAAAAAAAAQs/hLMnhcEYRos/s420-Ic42/valueprop.png"/>
+          </div>
+          <div class="col-md-6 center-block">
+          <form>
+            <input class="form-control" id="name" placeholder="Enter your name" size="24" type="text"><br/>
+            <input class="form-control" id="email" placeholder="Enter email" size="24" type="email"><br/>
+            <!--<input class="claritybtn btn-success"type="submit" value="Download The Inward Investment Marketing System E-Book">-->
+            <button class="claritybtn btn-success btn-lg center-block" onclick="swapsection('one')"> Download E-Book</button>
+          </form>
+        </div>
+          </div>
+          <br/>
+          <!-- <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> No Thanks </button> 
+          <button class="claritybtn btn-danger btn-lg center-block" onclick="swapsection('one')"> No Thanks. We are not interested in growing our regional economy.</button> -->
+          
+    </div>
 </section>
 
 
