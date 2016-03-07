@@ -28,6 +28,6 @@
 })(jQuery);
 
   function swapsection(section){
-  $('#'+section).toggle();
+  //$('#'+section).toggle();
   $('#'+section+'-form').toggle();
   }
