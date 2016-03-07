@@ -17,7 +17,7 @@
     });
 
     $('#collapsingNavbar li a').click(function() {
-        // always close responsive nav after click 
+        // always close responsive nav after click
         $('.navbar-toggler:visible').click();
     });
 */
@@ -26,3 +26,8 @@
     });
 
 })(jQuery);
+
+  function swapsection(section){
+  $('#'+section).toggle();
+  $('#'+section+'-form').toggle();
+  }

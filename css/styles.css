@@ -162,15 +162,19 @@ footer h4, footer h6 {
     color: #007FFF !important;
     background-color: transparent;
 }
+.relative{
+  position:relative;
+  padding: 10px;
+}
 .CTAtopimage{
-  position: relative;
-  top: 15px;
-  left: 15px;
+  
+  top: 40px;
+  left: 40px;
 }
 .CTAbottomimage{
-  position: relative;
-  top: 0px;
-  left:  0px;
+  z-index: 2;
+  top: 10px;
+  left:  10px;
 }
 /* responsive nav */
 @media(max-width:48em) {
