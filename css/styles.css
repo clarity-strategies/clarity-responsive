@@ -176,6 +176,17 @@ footer h4, footer h6 {
   top: 10px;
   left:  10px;
 }
+
+.close{
+			float: right;
+			overflow: auto;
+			width: 20px;
+		  height: 20px;
+		  border-radius: 50%;
+		  border-width: medium;
+		  border-color: white;
+		  border-style: solid;
+		}
 /* responsive nav */
 @media(max-width:48em) {
     .navbar-default .navbar-nav>.nav-item {
