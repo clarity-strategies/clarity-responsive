@@ -1,1 +1,1 @@
-{"mixinTypes":["contribution"],"builders":{"configs":{}},"runners":{"configs":{}},"type":"python","attributes":{"language":["python"]}}
+{"mixinTypes":["contribution"],"builders":{"configs":{}},"runners":{"configs":{},"default":"project:/ENV1-clarity-responsive-git"},"type":"python","attributes":{"language":["python"]}}
