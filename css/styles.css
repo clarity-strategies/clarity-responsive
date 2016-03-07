@@ -168,7 +168,9 @@ footer h4, footer h6 {
   left: 15px;
 }
 .CTAbottomimage{
-
+  position: relative;
+  top: 0px;
+  left:  0px;
 }
 /* responsive nav */
 @media(max-width:48em) {
