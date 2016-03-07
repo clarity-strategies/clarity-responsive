@@ -177,11 +177,8 @@ footer h4, footer h6 {
   left:  10px;
 }
 
-.close{
-			float: right;
-			overflow: auto;
-			width: 20px;
-		  height: 20px;
+.closer{
+
 		  border-radius: 50%;
 		  border-width: medium;
 		  border-color: white;
