@@ -178,11 +178,11 @@ footer h4, footer h6 {
 }
 
 .closer{
-
+        color: white;
 		  border-radius: 50%;
-		  border-width: medium;
-		  border-color: white;
-		  border-style: solid;
+		  border-width: medium !important;
+		  border-color: white !important;
+		  border-style: solid !important;
 		}
 /* responsive nav */
 @media(max-width:48em) {
