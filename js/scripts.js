@@ -32,7 +32,7 @@
 
 
   $('.clarityform').submit(function() {
-    alert(encodeURIComponent(thedata));
+    //alert(encodeURIComponent(thedata));
     var thedata = JSON.stringify($(this).serializeObject());
     var script = document.createElement('script');
     script.src = 'https://script.google.com/macros/s/AKfycbwtICQXBCi2XIPiuI3tZM4XmbT_Xr8XXA60b-oAwNTrdhrzp24/exec?data='+encodeURIComponent(thedata);
@@ -42,7 +42,7 @@
     var thankmsg = '<p>Thanks '+enqname+'. Someone from the team will contact you.</p>';
     if($(this).find('input[name="subscribe"]').prop('checked') ){thankmsg = thankmsg + '<p><strong>Great</strong> you chose to subscribe to Inward Investment news and insights email newsletter. Please check your email inbox now and <strong>action the confirmation</strong>.</p>'};
     $('#subscribe-sb ul').html('');
-    alert(thankmsg)
+    //alert(thankmsg)
     $(this).html(thankmsg);
     return false;
   });
