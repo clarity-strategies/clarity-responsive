@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Advanced Internet marketing strategies for Inward Investment Promotion and Strategic Economic Development by Clarity" />
+    <meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+    <!--<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+<body>
+<ul id='newsandevents'></ul><br /><div style='display: block; clear: both;'></div>
+<section id='news' style='background-color: #fff;'>
+  <div class='container text-xs-center'>
+   <h3 style='color: #0073b5;margin-top:24px;'>INWARD INVESTMENT MARKETING BLOG</h3>
+   <h2 class='text-xs' style='margin: 24px 0px 24px 0px'>Insights For Inward Investment Professionals</h2>
+
+        <div id="fp1" class='row fp-banner '>
+
+      </div>
+        <div id="fp2" class='row fp-banner '>
+
+      </div>
+
+</div>
+  <br/>
+</section>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/tether/1.2.0/tether.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+<script type='text/javascript'>//
+//<![CDATA[
+var imageReg = /s\B\d{2,3}-c/;
+$(document).ready(function(){
+ //var slideContainer = $('#newsandevents');
+ var url = '//www.clarity-strategies.com/feeds/posts/default?alt=json&max-results=6';
+ $.getJSON(
+   url + '&callback=?').
+   done(function(data){
+  $.each(
+    data.feed.entry || [],
+    function(i, e){
+   if(i<6){
+    var title = (e.title.$t || '');
+    var content = (e.content.$t || '');
+    var re = /<\S[^>]*>/g;
+    postcontent = content.replace(re, "");
+    var url = (e.link || []).pop().href;
+    var thumbnail = (e.media$thumbnail.url || '');
+    var thumbnail = thumbnail.replace(imageReg,'s300');
+    var slideContainer = (i < 3) ? "fp1":"fp2";
+    var slideContent = "<div class='col-md-4 text-xs-left'><a href='" + url + "' class='newstitle'>" + title + "'</a><br/>"+postcontent.substring(0, 150)+"...</div>";
+    slideContainer  = document.getElementById(slideContainer);
+    slideContainer.innerHTML = slideContainer.innerHTML + slideContent;
+   }
+    });
+   }).
+   fail(function(){
+  // handle failure here
+   });
+});
+//]]></script>
+
+
+</body>
+</html>
