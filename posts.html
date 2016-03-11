@@ -34,7 +34,7 @@
 var imageReg = /s\B\d{2,3}-c/;
 $(document).ready(function(){
  //var slideContainer = $('#newsandevents');
- var url = 'http://www.clarity-strategies.com/feeds/posts/default?alt=json&max-results=6';
+ var url = '//www.clarity-strategies.com/feeds/posts/default?alt=json&max-results=6';
  $.getJSON(
    url + '&callback=?').
    done(function(data){
@@ -54,13 +54,11 @@ $(document).ready(function(){
     slideContainer  = document.getElementById(slideContainer);
     slideContainer.innerHTML = slideContainer.innerHTML + slideContent;
    }
-
     });
    }).
    fail(function(){
   // handle failure here
    });
-
 });
 //]]></script>
 
