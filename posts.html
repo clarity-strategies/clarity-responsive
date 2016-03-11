@@ -5,7 +5,7 @@
     <meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
     <!--<link href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 <body>
@@ -50,7 +50,7 @@ $(document).ready(function(){
     var thumbnail = (e.media$thumbnail.url || '');
     var thumbnail = thumbnail.replace(imageReg,'s300');
     var slideContainer = (i < 3) ? "fp1":"fp2";
-    var slideContent = "<div class='col-md-4 xlead  text-xs-left'><img src='"+thumbnail+"'/><br/><a href='" + url + "' class='newstitle'>" + title + "'</a><br/>"+postcontent.substring(0, 150)+"...</div>";
+    var slideContent = "<div class='col-md-4 text-xs-left'><img src='"+thumbnail+"'/><br/><a href='" + url + "' class='newstitle'>" + title + "'</a><br/>"+postcontent.substring(0, 150)+"...</div>";
     slideContainer  = document.getElementById(slideContainer);
     slideContainer.innerHTML = slideContainer.innerHTML + slideContent;
    }
